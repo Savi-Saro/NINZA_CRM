@@ -55,7 +55,8 @@ wLib.waitUntilElementToBeVisible(driver,toast);
 String toastmsg = toast.getText();
 System.out.println(toastmsg);
 homepage.getCloseToastMsg().click();
-AssertJUnit.assertTrue(toastmsg.contains("Successfully Added"));			
+AssertJUnit.assertTrue(toastmsg.contains("Successfully Added"));
+System.out.println("I already pushed a code");
 	}
 	
 	@Test(groups = "regression")
