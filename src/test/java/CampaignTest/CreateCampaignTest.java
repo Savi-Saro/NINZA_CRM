@@ -7,6 +7,7 @@ import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,6 +19,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -41,7 +44,9 @@ public class CreateCampaignTest extends BaseClass{
 		
 //Create Campaign
 CampaignsPage campaignsPage = new CampaignsPage(driver);
-campaignsPage.getAddAcreateCampaignBtn().click();
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+wait.until(ExpectedConditions.elementToBeClickable(campaignsPage.getAddAcreateCampaignBtn())).click();
+//campaignsPage.getAddAcreateCampaignBtn().click();
 CreateCampaignPage createCampaignPage = new CreateCampaignPage(driver);
 createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME+jLib.getRandomString(3));
 createCampaignPage.targetSizeTF().clear();

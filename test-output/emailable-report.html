@@ -8,41 +8,13 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">90,323</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,163</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ProductTest.CreateProductTest</td><td><a href="#m0">createProductLaptopTest</a></td><td rowspan="1">1769538773110</td><td rowspan="1">1550</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">CampaignTest.CreateCampaignTest</td><td><a href="#m1">createCampaignWithExpectedCloseDateTest</a></td><td rowspan="1">1769538730579</td><td rowspan="1">2713</td></tr><tr class="passedeven"><td><a href="#m2">createCampaignWithMandatoryFieldsTest</a></td><td rowspan="1">1769538739045</td><td rowspan="1">1603</td></tr><tr class="passedeven"><td><a href="#m3">createCampaignWithStatusTest</a></td><td rowspan="1">1769538743944</td><td rowspan="1">1797</td></tr><tr class="passedodd"><td rowspan="1">ProductTest.CreateProductTest</td><td><a href="#m4">createProductMobileTest</a></td><td rowspan="1">1769538782927</td><td rowspan="1">22431</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">CampaignTest.CreateCampaignTest</td><td><a href="#m0">createCampaignWithExpectedCloseDateTest</a></td><td rowspan="1">1769546088961</td><td rowspan="1">2302</td></tr><tr class="passedeven"><td><a href="#m1">createCampaignWithMandatoryFieldsTest</a></td><td rowspan="1">1769546097242</td><td rowspan="1">1796</td></tr><tr class="passedeven"><td><a href="#m2">createCampaignWithStatusTest</a></td><td rowspan="1">1769546102478</td><td rowspan="1">1739</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">ProductTest.CreateProductTest#createProductLaptopTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1433, 93). Other element would receive the click: &lt;div class=&quot;user-icon-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=144.0.7559.97)
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [767afc4a8d336efea8e5aea350297257, clickElement {id=f.D778D0664876B8E8D500BDE7B65E88B4.d.A69690F231579E4B34724C44E89F781C.e.31}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\savisaro\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56680}, goog:processID: 12076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56680/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (767afc4a8d336efea8e5aea350297257)] -&gt; xpath: //span[text()=&apos;Add Product&apos;]]
-Session ID: 767afc4a8d336efea8e5aea350297257
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-	at ProductTest.CreateProductTest.createProductLaptopTest(CreateProductTest.java:85)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">CampaignTest.CreateCampaignTest#createCampaignWithExpectedCloseDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">CampaignTest.CreateCampaignTest#createCampaignWithMandatoryFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">CampaignTest.CreateCampaignTest#createCampaignWithStatusTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">ProductTest.CreateProductTest#createProductMobileTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">CampaignTest.CreateCampaignTest#createCampaignWithExpectedCloseDateTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">CampaignTest.CreateCampaignTest#createCampaignWithMandatoryFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">CampaignTest.CreateCampaignTest#createCampaignWithStatusTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
