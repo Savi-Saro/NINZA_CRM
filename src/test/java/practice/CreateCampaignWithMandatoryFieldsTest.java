@@ -55,8 +55,8 @@ public class CreateCampaignWithMandatoryFieldsTest {
 				ExcelFileUtility eLib = new ExcelFileUtility();
 				String CAMPAIGN_NAME = eLib.readDataFromExcelFile("Campaigns",1,2);
 				String TARGET_SIZE = eLib.readDataFromExcelFile("Campaigns", 1, 3);
-				
-				WebDriverUtility wLib = new WebDriverUtility();
+				WebDriver driver = null;
+				WebDriverUtility wLib = new WebDriverUtility(driver);
 				
 		//Launch the browser
 		ChromeOptions settings = new ChromeOptions();
@@ -64,7 +64,7 @@ public class CreateCampaignWithMandatoryFieldsTest {
 		prefs.put("profile.password_manager_leak_detection", false);
 		settings.setExperimentalOption("prefs", prefs); 
 		
-		WebDriver driver = null;
+		
 		if(BROWSER.equalsIgnoreCase("Edge"))
 		driver = new EdgeDriver();
 		else if(BROWSER.equalsIgnoreCase("Chrome"))

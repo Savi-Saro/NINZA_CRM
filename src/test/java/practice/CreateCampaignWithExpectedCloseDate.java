@@ -61,7 +61,8 @@ public class CreateCampaignWithExpectedCloseDate {
 				String EXPECTED_CLOSE_DATE = eLib.readDataFromExcelFile("Campaigns", 7, 4);
 		
 				JavaUtility jLib = new JavaUtility();
-				WebDriverUtility wLib = new WebDriverUtility();
+				WebDriver driver=null;
+				WebDriverUtility wLib = new WebDriverUtility(driver);
 				
 		//Launch the browser
 		ChromeOptions settings = new ChromeOptions();
@@ -69,7 +70,7 @@ public class CreateCampaignWithExpectedCloseDate {
 		prefs.put("profile.password_manager_leak_detection", false);
 		settings.setExperimentalOption("prefs", prefs); 
 		
-		WebDriver driver = null;
+		//WebDriver driver = null;
 		if(BROWSER.equalsIgnoreCase("Edge"))
 		driver = new EdgeDriver();
 		else if(BROWSER.equalsIgnoreCase("Chrome"))

@@ -58,8 +58,8 @@ public class CreateCampaignWithStatus {
 		String CAMPAIGN_NAME = eLib.readDataFromExcelFile("Campaigns",4,2);
 		String TARGET_SIZE = eLib.readDataFromExcelFile("Campaigns", 4, 3);
 		String STATUS = eLib.readDataFromExcelFile("Campaigns", 4, 4);
-		
-		WebDriverUtility wLib = new WebDriverUtility();
+		WebDriver driver = null;
+		WebDriverUtility wLib = new WebDriverUtility(driver);
 		
 		//Launch the browser
 		ChromeOptions settings = new ChromeOptions();
@@ -67,7 +67,7 @@ public class CreateCampaignWithStatus {
 		prefs.put("profile.password_manager_leak_detection", false);
 		settings.setExperimentalOption("prefs", prefs); 
 		
-		WebDriver driver = null;
+		//WebDriver driver = null;
 		if(BROWSER.equalsIgnoreCase("Edge"))
 		driver = new EdgeDriver();
 		else if(BROWSER.equalsIgnoreCase("Chrome"))

@@ -65,7 +65,8 @@ public class CreateProductMobile {
 				//int randnum = random.nextInt(1000);
 				
 				JavaUtility jLib = new JavaUtility();
-				WebDriverUtility wLib = new WebDriverUtility();
+				WebDriver driver = null;
+				WebDriverUtility wLib = new WebDriverUtility(driver);
 				
 				//Launch the browser
 				ChromeOptions settings = new ChromeOptions();
@@ -73,7 +74,7 @@ public class CreateProductMobile {
 				prefs.put("profile.password_manager_leak_detection", false);
 				settings.setExperimentalOption("prefs", prefs); 
 				
-				WebDriver driver = null;
+				//WebDriver driver = null;
 				if(BROWSER.equalsIgnoreCase("Edge"))
 				driver = new EdgeDriver();
 				else if(BROWSER.equalsIgnoreCase("Chrome"))
