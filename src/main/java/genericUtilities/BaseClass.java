@@ -71,7 +71,7 @@ public class BaseClass {
 
 
 		  driver.manage().window().maximize();
-		  driver.manage().window().setSize(new Dimension(1920, 1080));
+		  //driver.manage().window().setSize(new Dimension(1920, 1080));
 		  wLib.implicitWait(driver);
 	  }
 	  
