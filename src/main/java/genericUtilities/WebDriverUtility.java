@@ -3,6 +3,7 @@ package genericUtilities;
 import java.time.Duration;
 import java.util.Set;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -18,6 +19,17 @@ public void waitUntilElementToBeVisible(WebDriver driver,WebElement element) {
 	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 	wait.until(ExpectedConditions.visibilityOf(element));
 }
+
+    public void safeClick(WebDriver driver, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(element));
+        ((JavascriptExecutor) driver)
+            .executeScript("arguments[0].scrollIntoView(true);", element);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        ((JavascriptExecutor) driver)
+            .executeScript("arguments[0].click();", element);
+    }
+
 public void select(WebElement element, int index)  {
 	Select obj = new Select(element);
 	obj.selectByIndex(index);

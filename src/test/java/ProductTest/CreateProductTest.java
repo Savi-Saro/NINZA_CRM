@@ -43,8 +43,8 @@ public class CreateProductTest extends BaseClass{
 		
 		//Create Product
 		ProductsPage product = new ProductsPage(driver);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(product.getAddProductBtn())).click();
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wLib.safeClick(driver, product.getAddProductBtn());
 		//product.getAddProductBtn().click();
 		AddProductPage addproducts = new AddProductPage(driver);
 		product.getAddProductBtnclick().click();

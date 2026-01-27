@@ -44,9 +44,8 @@ public class CreateCampaignTest extends BaseClass{
 		
 //Create Campaign
 CampaignsPage campaignsPage = new CampaignsPage(driver);
-WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-wait.until(ExpectedConditions.elementToBeClickable(campaignsPage.getAddAcreateCampaignBtn())).click();
-//campaignsPage.getAddAcreateCampaignBtn().click();
+//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+wLib.safeClick(driver, campaignsPage.getAddAcreateCampaignBtn());
 CreateCampaignPage createCampaignPage = new CreateCampaignPage(driver);
 createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME+jLib.getRandomString(3));
 createCampaignPage.targetSizeTF().clear();
