@@ -24,7 +24,7 @@ public void select(WebElement element, int index)  {
 }
 public void select(WebElement element, String Value)  {
 	Select obj = new Select(element);
-	obj.selectByValue(Value);
+	obj.selectByVisibleText(Value);
 }
 public void select(String text,WebElement element)  {
 	Select obj = new Select(element);

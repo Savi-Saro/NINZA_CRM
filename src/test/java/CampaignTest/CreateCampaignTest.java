@@ -43,7 +43,7 @@ public class CreateCampaignTest extends BaseClass{
 CampaignsPage campaignsPage = new CampaignsPage(driver);
 campaignsPage.getAddAcreateCampaignBtn().click();
 CreateCampaignPage createCampaignPage = new CreateCampaignPage(driver);
-createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME);
+createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME+jLib.getRandomString(3));
 createCampaignPage.targetSizeTF().clear();
 createCampaignPage.targetSizeTF().sendKeys(TARGET_SIZE);
 createCampaignPage.createCampaignBtn().click();		
@@ -57,9 +57,6 @@ System.out.println(toastmsg);
 homepage.getCloseToastMsg().click();
 
 AssertJUnit.assertTrue(toastmsg.contains("Successfully Added"));
-System.out.println("I already pushed a code");
-	
-System.out.println("Hi");
 	}
 	
 	@Test(groups = "regression")
@@ -73,7 +70,7 @@ String STATUS = eLib.readDataFromExcelFile("Campaigns", 4, 4);
 CampaignsPage campaignsPage = new CampaignsPage(driver);
 campaignsPage.getAddAcreateCampaignBtn().click();
 CreateCampaignPage createCampaignPage = new CreateCampaignPage(driver);
-createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME);
+createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME+jLib.getRandomString(3));
 createCampaignPage.targetSizeTF().clear();
 createCampaignPage.targetSizeTF().sendKeys(TARGET_SIZE);
 createCampaignPage.campaignStatusTF().sendKeys(STATUS);
@@ -100,7 +97,7 @@ AssertJUnit.assertTrue(toastmsg.contains("Successfully Added"));
 CampaignsPage campaignsPage = new CampaignsPage(driver);
 campaignsPage.getAddAcreateCampaignBtn().click();
 CreateCampaignPage createCampaignPage = new CreateCampaignPage(driver);
-createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME);
+createCampaignPage.getCampaignNameTF().sendKeys(CAMPAIGN_NAME+jLib.getRandomString(3));
 createCampaignPage.targetSizeTF().clear();
 createCampaignPage.targetSizeTF().sendKeys(TARGET_SIZE);
 createCampaignPage.expectedCloseDateTF().sendKeys(EXPECTED_CLOSE_DATE);

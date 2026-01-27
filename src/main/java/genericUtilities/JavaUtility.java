@@ -28,5 +28,17 @@ public class JavaUtility {
 				cal.add(cal.DAY_OF_MONTH,days);
 				return sim.format(cal.getTime());
 			}
-	}
+			
+			    public static String getRandomString(int length) {
+			        String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+			        Random random = new Random();
+			        StringBuilder sb = new StringBuilder();
+
+			        for (int i = 0; i < length; i++) {
+			            sb.append(letters.charAt(random.nextInt(letters.length())));
+			        }
+			        return sb.toString();
+			    }
+			}
+	
 

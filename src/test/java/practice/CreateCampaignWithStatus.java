@@ -109,7 +109,7 @@ public class CreateCampaignWithStatus {
 		String toastmsg = toast.getText();
 		System.out.println(toastmsg);
 		if(toastmsg.contains("Successfully Added"))
-			System.out.println("Campain addded");
+			System.out.println("Campaign addded");
 		else 
 			System.out.println("Campain not addded");
 		homepage.getCloseToastMsg().click();

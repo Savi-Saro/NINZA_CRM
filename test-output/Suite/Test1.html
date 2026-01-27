@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 09 22:34:07 EST 2025</td>
+<td>Started on:</td><td>Tue Jan 27 13:31:57 EST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>86 seconds (86066 ms)</td>
+<tr><td>Total time:</td><td>90 seconds (90323 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,73 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CampaignTest.CreateCampaignTest.createCampaignWithMandatoryFieldsTest()'><b>createCampaignWithMandatoryFieldsTest</b><br>Test class: CampaignTest.CreateCampaignTest</td>
-<td><div><pre>java.lang.AssertionError: 
-	at CampaignTest.CreateCampaignTest.createCampaignWithMandatoryFieldsTest(CreateCampaignTest.java:58)
+<td title='ProductTest.CreateProductTest.createProductLaptopTest()'><b>createProductLaptopTest</b><br>Test class: ProductTest.CreateProductTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1433, 93). Other element would receive the click: &lt;div class=&quot;user-icon-container&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=144.0.7559.97)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [767afc4a8d336efea8e5aea350297257, clickElement {id=f.D778D0664876B8E8D500BDE7B65E88B4.d.A69690F231579E4B34724C44E89F781C.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\savisaro\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56680}, goog:processID: 12076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56680/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (767afc4a8d336efea8e5aea350297257)] -&gt; xpath: //span[text()=&apos;Add Product&apos;]]
+Session ID: 767afc4a8d336efea8e5aea350297257
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at ProductTest.CreateProductTest.createProductLaptopTest(CreateProductTest.java:85)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace993882364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace993882364'><pre>java.lang.AssertionError: 
-	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
-	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-	at CampaignTest.CreateCampaignTest.createCampaignWithMandatoryFieldsTest(CreateCampaignTest.java:58)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051473657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051473657'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1433, 93). Other element would receive the click: &lt;div class=&quot;user-icon-container&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=144.0.7559.97)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [767afc4a8d336efea8e5aea350297257, clickElement {id=f.D778D0664876B8E8D500BDE7B65E88B4.d.A69690F231579E4B34724C44E89F781C.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\savisaro\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56680}, goog:processID: 12076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56680/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (767afc4a8d336efea8e5aea350297257)] -&gt; xpath: //span[text()=&apos;Add Product&apos;]]
+Session ID: 767afc4a8d336efea8e5aea350297257
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at ProductTest.CreateProductTest.createProductLaptopTest(CreateProductTest.java:85)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
@@ -112,7 +152,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 </pre></div></td>
 <td>1</td>
-<td>CampaignTest.CreateCampaignTest@6f27a732</td></tr>
+<td>ProductTest.CreateProductTest@7d8704ef</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -123,25 +163,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='CampaignTest.CreateCampaignTest.createCampaignWithMandatoryFieldsTest()'><b>createCampaignWithMandatoryFieldsTest</b><br>Test class: CampaignTest.CreateCampaignTest</td>
+<td></td>
+<td>1</td>
+<td>CampaignTest.CreateCampaignTest@305b7c14</td></tr>
+<tr>
 <td title='ProductTest.CreateProductTest.createProductMobileTest()'><b>createProductMobileTest</b><br>Test class: ProductTest.CreateProductTest</td>
 <td></td>
 <td>22</td>
-<td>ProductTest.CreateProductTest@61d6015a</td></tr>
+<td>ProductTest.CreateProductTest@7d8704ef</td></tr>
 <tr>
 <td title='CampaignTest.CreateCampaignTest.createCampaignWithExpectedCloseDateTest()'><b>createCampaignWithExpectedCloseDateTest</b><br>Test class: CampaignTest.CreateCampaignTest</td>
 <td></td>
 <td>2</td>
-<td>CampaignTest.CreateCampaignTest@6f27a732</td></tr>
+<td>CampaignTest.CreateCampaignTest@305b7c14</td></tr>
 <tr>
 <td title='CampaignTest.CreateCampaignTest.createCampaignWithStatusTest()'><b>createCampaignWithStatusTest</b><br>Test class: CampaignTest.CreateCampaignTest</td>
 <td></td>
 <td>1</td>
-<td>CampaignTest.CreateCampaignTest@6f27a732</td></tr>
-<tr>
-<td title='ProductTest.CreateProductTest.createProductLaptopTest()'><b>createProductLaptopTest</b><br>Test class: ProductTest.CreateProductTest</td>
-<td></td>
-<td>22</td>
-<td>ProductTest.CreateProductTest@61d6015a</td></tr>
+<td>CampaignTest.CreateCampaignTest@305b7c14</td></tr>
 </table><p>
 </body>
 </html>

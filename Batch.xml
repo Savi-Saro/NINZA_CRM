@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="genericUtilities.ListenerImplementation"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="2" name="Test">
     <classes>
       <class name="CampaignTest.CreateCampaignTest"/>
       <class name="ProductTest.CreateProductTest"/>

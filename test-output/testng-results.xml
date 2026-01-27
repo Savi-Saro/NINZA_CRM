@@ -2,153 +2,178 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-10T21:36:00 EST" name="Suite" finished-at="2025-11-10T21:37:23 EST" duration-ms="83196">
+  <suite started-at="2026-01-27T13:31:57 EST" name="Suite" finished-at="2026-01-27T13:33:27 EST" duration-ms="90323">
     <groups>
       <group name="regression">
-        <method signature="CreateCampaignTest.createCampaignWithExpectedCloseDateTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" name="createCampaignWithExpectedCloseDateTest" class="CampaignTest.CreateCampaignTest"/>
-        <method signature="CreateCampaignTest.createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" name="createCampaignWithMandatoryFieldsTest" class="CampaignTest.CreateCampaignTest"/>
-        <method signature="CreateCampaignTest.createCampaignWithStatusTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" name="createCampaignWithStatusTest" class="CampaignTest.CreateCampaignTest"/>
-        <method signature="CreateProductTest.createProductLaptopTest()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" name="createProductLaptopTest" class="ProductTest.CreateProductTest"/>
-        <method signature="CreateProductTest.createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" name="createProductMobileTest" class="ProductTest.CreateProductTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithExpectedCloseDateTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" name="createCampaignWithExpectedCloseDateTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" name="createCampaignWithMandatoryFieldsTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithStatusTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" name="createCampaignWithStatusTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateProductTest.createProductLaptopTest()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" name="createProductLaptopTest" class="ProductTest.CreateProductTest"/>
+        <method signature="CreateProductTest.createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" name="createProductMobileTest" class="ProductTest.CreateProductTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithExpectedCloseDateTest()[pri:0, instance:CampaignTest.CreateCampaignTest@6a03bcb1]" name="createCampaignWithExpectedCloseDateTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@6a03bcb1]" name="createCampaignWithMandatoryFieldsTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithStatusTest()[pri:0, instance:CampaignTest.CreateCampaignTest@6a03bcb1]" name="createCampaignWithStatusTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateProductTest.createProductLaptopTest()[pri:0, instance:ProductTest.CreateProductTest@21b2e768]" name="createProductLaptopTest" class="ProductTest.CreateProductTest"/>
+        <method signature="CreateProductTest.createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@21b2e768]" name="createProductMobileTest" class="ProductTest.CreateProductTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CreateCampaignTest.createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" name="createCampaignWithMandatoryFieldsTest" class="CampaignTest.CreateCampaignTest"/>
-        <method signature="CreateProductTest.createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" name="createProductMobileTest" class="ProductTest.CreateProductTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" name="createCampaignWithMandatoryFieldsTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateProductTest.createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" name="createProductMobileTest" class="ProductTest.CreateProductTest"/>
+        <method signature="CreateCampaignTest.createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@6a03bcb1]" name="createCampaignWithMandatoryFieldsTest" class="CampaignTest.CreateCampaignTest"/>
+        <method signature="CreateProductTest.createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@21b2e768]" name="createProductMobileTest" class="ProductTest.CreateProductTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-11-10T21:36:00 EST" name="Test" finished-at="2025-11-10T21:37:23 EST" duration-ms="83196">
+    <test started-at="2026-01-27T13:31:57 EST" name="Test1" finished-at="2026-01-27T13:33:27 EST" duration-ms="90323">
       <class name="ProductTest.CreateProductTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:36:24 EST" name="beforeClass" finished-at="2025-11-10T21:36:26 EST" duration-ms="1345" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:32:27 EST" name="beforeClass" finished-at="2026-01-27T13:32:28 EST" duration-ms="1235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:36:26 EST" name="beforeMethod" finished-at="2025-11-10T21:36:30 EST" duration-ms="4873" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:32:28 EST" name="beforeMethod" finished-at="2026-01-27T13:32:53 EST" duration-ms="24519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createProductLaptopTest()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:36:30 EST" name="createProductLaptopTest" finished-at="2025-11-10T21:36:53 EST" duration-ms="22640" status="PASS">
+        <test-method signature="createProductLaptopTest()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:32:53 EST" name="createProductLaptopTest" finished-at="2026-01-27T13:32:54 EST" duration-ms="1550" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1433, 93). Other element would receive the click: <div class="user-icon-container">...</div>
+  (Session info: chrome=144.0.7559.97)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [767afc4a8d336efea8e5aea350297257, clickElement {id=f.D778D0664876B8E8D500BDE7B65E88B4.d.A69690F231579E4B34724C44E89F781C.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\savisaro\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56680}, goog:processID: 12076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56680/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (767afc4a8d336efea8e5aea350297257)] -> xpath: //span[text()='Add Product']]
+Session ID: 767afc4a8d336efea8e5aea350297257]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1433, 93). Other element would receive the click: <div class="user-icon-container">...</div>
+  (Session info: chrome=144.0.7559.97)
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [767afc4a8d336efea8e5aea350297257, clickElement {id=f.D778D0664876B8E8D500BDE7B65E88B4.d.A69690F231579E4B34724C44E89F781C.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.97, chrome: {chromedriverVersion: 144.0.7559.96 (d7b80622cfab..., userDataDir: C:\Users\savisaro\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56680}, goog:processID: 12076, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56680/devtoo..., se:cdpVersion: 144.0.7559.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (767afc4a8d336efea8e5aea350297257)] -> xpath: //span[text()='Add Product']]
+Session ID: 767afc4a8d336efea8e5aea350297257
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at ProductTest.CreateProductTest.createProductLaptopTest(CreateProductTest.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProductLaptopTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:36:53 EST" name="afterMethod" finished-at="2025-11-10T21:36:56 EST" duration-ms="3328" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:32:54 EST" name="afterMethod" finished-at="2026-01-27T13:33:01 EST" duration-ms="6352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:36:56 EST" name="beforeMethod" finished-at="2025-11-10T21:36:59 EST" duration-ms="2668" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:33:01 EST" name="beforeMethod" finished-at="2026-01-27T13:33:02 EST" duration-ms="1743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:36:59 EST" name="createProductMobileTest" finished-at="2025-11-10T21:37:21 EST" duration-ms="22161" status="PASS">
+        <test-method signature="createProductMobileTest()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:33:02 EST" name="createProductMobileTest" finished-at="2026-01-27T13:33:25 EST" duration-ms="22431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProductMobileTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:37:21 EST" name="afterMethod" finished-at="2025-11-10T21:37:23 EST" duration-ms="1489" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:33:25 EST" name="afterMethod" finished-at="2026-01-27T13:33:27 EST" duration-ms="1848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ProductTest.CreateProductTest@1bb266b3]" started-at="2025-11-10T21:37:23 EST" name="afterClass" finished-at="2025-11-10T21:37:23 EST" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ProductTest.CreateProductTest@7d8704ef]" started-at="2026-01-27T13:33:27 EST" name="afterClass" finished-at="2026-01-27T13:33:27 EST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- ProductTest.CreateProductTest -->
       <class name="CampaignTest.CreateCampaignTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:00 EST" name="beforeSuite" finished-at="2025-11-10T21:36:00 EST" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:00 EST" name="beforeTest" finished-at="2025-11-10T21:36:00 EST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:31:57 EST" name="beforeTest" finished-at="2026-01-27T13:31:57 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:00 EST" name="beforeClass" finished-at="2025-11-10T21:36:02 EST" duration-ms="2551" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:31:57 EST" name="beforeClass" finished-at="2026-01-27T13:31:59 EST" duration-ms="2347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:02 EST" name="beforeMethod" finished-at="2025-11-10T21:36:07 EST" duration-ms="4878" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:31:59 EST" name="beforeMethod" finished-at="2026-01-27T13:32:10 EST" duration-ms="11017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignWithExpectedCloseDateTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:07 EST" name="createCampaignWithExpectedCloseDateTest" finished-at="2025-11-10T21:36:10 EST" duration-ms="2682" status="PASS">
+        <test-method signature="createCampaignWithExpectedCloseDateTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:10 EST" name="createCampaignWithExpectedCloseDateTest" finished-at="2026-01-27T13:32:13 EST" duration-ms="2713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignWithExpectedCloseDateTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:10 EST" name="afterMethod" finished-at="2025-11-10T21:36:14 EST" duration-ms="3809" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:13 EST" name="afterMethod" finished-at="2026-01-27T13:32:17 EST" duration-ms="3990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:14 EST" name="beforeMethod" finished-at="2025-11-10T21:36:16 EST" duration-ms="1696" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:17 EST" name="beforeMethod" finished-at="2026-01-27T13:32:19 EST" duration-ms="1756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:16 EST" name="createCampaignWithMandatoryFieldsTest" finished-at="2025-11-10T21:36:17 EST" duration-ms="1670" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-at CampaignTest.CreateCampaignTest.createCampaignWithMandatoryFieldsTest(CreateCampaignTest.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="createCampaignWithMandatoryFieldsTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:19 EST" name="createCampaignWithMandatoryFieldsTest" finished-at="2026-01-27T13:32:20 EST" duration-ms="1603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignWithMandatoryFieldsTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:17 EST" name="afterMethod" finished-at="2025-11-10T21:36:19 EST" duration-ms="1986" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:20 EST" name="afterMethod" finished-at="2026-01-27T13:32:22 EST" duration-ms="1864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:19 EST" name="beforeMethod" finished-at="2025-11-10T21:36:21 EST" duration-ms="1581" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:22 EST" name="beforeMethod" finished-at="2026-01-27T13:32:23 EST" duration-ms="1428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createCampaignWithStatusTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:21 EST" name="createCampaignWithStatusTest" finished-at="2025-11-10T21:36:23 EST" duration-ms="1754" status="PASS">
+        <test-method signature="createCampaignWithStatusTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:23 EST" name="createCampaignWithStatusTest" finished-at="2026-01-27T13:32:25 EST" duration-ms="1797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCampaignWithStatusTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:23 EST" name="afterMethod" finished-at="2025-11-10T21:36:24 EST" duration-ms="1268" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:25 EST" name="afterMethod" finished-at="2026-01-27T13:32:27 EST" duration-ms="1388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:36:24 EST" name="afterClass" finished-at="2025-11-10T21:36:24 EST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:32:27 EST" name="afterClass" finished-at="2026-01-27T13:32:27 EST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:37:23 EST" name="afterTest" finished-at="2025-11-10T21:37:23 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:CampaignTest.CreateCampaignTest@305b7c14]" started-at="2026-01-27T13:33:27 EST" name="afterTest" finished-at="2026-01-27T13:33:27 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:CampaignTest.CreateCampaignTest@152aa092]" started-at="2025-11-10T21:37:23 EST" name="afterSuite" finished-at="2025-11-10T21:37:23 EST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
       </class> <!-- CampaignTest.CreateCampaignTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>
