@@ -1,9 +1,14 @@
 package genericUtilities;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -20,15 +25,56 @@ public void waitUntilElementToBeVisible(WebDriver driver,WebElement element) {
 	wait.until(ExpectedConditions.visibilityOf(element));
 }
 
-    public void safeClick(WebDriver driver, WebElement element) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(element));
-        ((JavascriptExecutor) driver)
-            .executeScript("arguments[0].scrollIntoView(true);", element);
+private WebDriver driver;
+
+public WebDriverUtility(WebDriver driver) {
+    this.driver = driver;
+}
+
+/**
+ * Safely clicks an element.
+ * Handles:
+ * - Waiting for element to be clickable
+ * - Scrolling into view
+ * - JS click if normal click fails
+ * - Opens navbar toggle if element is hidden behind it (common in Jenkins)
+ */
+public void safeClick(By locator) {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+    try {
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         wait.until(ExpectedConditions.elementToBeClickable(element));
-        ((JavascriptExecutor) driver)
-            .executeScript("arguments[0].click();", element);
+
+        try {
+            // Try normal click first
+            element.click();
+        } catch (ElementClickInterceptedException e) {
+            // Check if a collapsible navbar is blocking the element
+            try {
+                WebElement navbarToggle = driver.findElement(By.cssSelector(".navbar-toggler"));
+                if (navbarToggle.isDisplayed()) {
+                    navbarToggle.click(); // Open the menu
+                    Thread.sleep(500);    // Small pause to let animation finish
+                }
+            } catch (NoSuchElementException | InterruptedException ignored) {
+            }
+
+            // Scroll element into view and retry click
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+            try {
+                element.click();
+            } catch (ElementClickInterceptedException ex) {
+                // Final fallback: JS click
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+            }
+        }
+
+    } catch (TimeoutException e) {
+        throw new RuntimeException("Element not clickable after waiting: " + locator, e);
     }
+}
+
 
 public void select(WebElement element, int index)  {
 	Select obj = new Select(element);

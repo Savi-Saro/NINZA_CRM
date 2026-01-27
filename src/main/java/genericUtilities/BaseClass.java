@@ -32,7 +32,7 @@ public class BaseClass {
 	public WebDriver driver = null;
 	public readDataFromPropertyFile plib = new readDataFromPropertyFile();
 	public ExcelFileUtility eLib = new ExcelFileUtility();
-	public WebDriverUtility wLib = new WebDriverUtility();
+	public WebDriverUtility wLib = new WebDriverUtility(driver);
 	public JavaUtility jLib = new JavaUtility();
 	public static WebDriver sdriver = null;
 	

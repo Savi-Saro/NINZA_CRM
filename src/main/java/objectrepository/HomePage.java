@@ -43,7 +43,7 @@ public class HomePage {
 	}
 	
 	public void logout() {
-		WebDriverUtility wLib=new WebDriverUtility();
+		WebDriverUtility wLib=new WebDriverUtility(driver);
 		wLib.mouseHoverOnWebElement(driver, userIcon);
 		wLib.clickOnWebElement(driver, logoutBtn);
 	}
